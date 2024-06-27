@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weekend_A2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0; /* color de fondo */
+            margin: 0;
+
+            background-image: url('calle1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+
+        .audio-container {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            display: block;
+            width: 60%;
+            border: 2px solid black;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        .personnage1 {
+            color: rgb(47, 47, 48);
+        }
+
+        .personnage2 {
+            color: rgb(156, 48, 151);
+        }
+
+        .personnage1,
+        .personnage2 {
+            font-size: 1.2em;
+            padding: 5px 0px;
+            font-family: sans-serif;
+        }
+
+        .switch-container {
+            width: 5%;
+            display: flex;
+            position: fixed;
+            right: 2%;
+            border: 1px solid gray;
+        }
+
+        .hidden {
+            color: #f0f0f000; /* fantasma codigo */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="audio-container">
+            <audio controls>
+                <source src="wekend.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <audio controls>
+                <source src="wekend2.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <audio controls>
+                <source src="wekend2.mp3" type="audio/mp3">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+        </div>
+        <div class="container">
+            <div>
+                <audio src=""></audio>
+                <p class="personnage1">Céline: Qu'est-ce que tu fais ce week-end?</p>
+            </div>
+            
+            <div class="personnage2">
+                <p>Julie: Je me repose : je reste à la maison, je ne sors pas. Je vais faire la grasse matinée... lire des magazines, regarder des DVD. Et toi, qu'est-ce que tu fais ?</p>
+            </div>
+            <div class="personnage1">
+                <p>Céline: Moi, je suis invitée chez des amis à la campagne. Je suis super contente de partir: on va se promener, jouer au tennis, faire le marché au village et préparer le repas tous ensemble... Le soir, on aime bien jouer aux cartes. Le week-end chez eux, j'adore. Il y a toujours plein d'amis et on s'amuse bien.</p>
+            </div>
+            <div class="personnage2">
+                <p>Julie: Ils habitent loin?</p>
+            </div>
+            <div class="personnage1">
+                <p>Céline: Non, à une heure de train. Tu sais que ce week-end, il va faire beau ?</p>
+            </div>
+            <div class="personnage2">
+                <p>Julie: Oui, j'ai regardé la météo à la télé... Je les connais, tes amis ?</p>
+            </div>
+            <div class="personnage1">
+                <p>Céline: Bien sûr, c'est Nathalie et Christophe. Pourquoi tu me demandes ça?</p>
+            </div>
+            <div class="personnage2">
+                <p>Julie: Eh bien ! finalement, j'aimerais bien venir avec toi... Tu crois que c'est possible?</p>
+            </div>
+            <div class="personnage1">
+                <p>Céline: Mais tu dis que tu veux te reposer... Attention, chez eux, il n'y a pas la télé et tu ne pourras pas faire la grasse matinée; mais c'est sûr, on passera un bon week-end !</p>
+            </div>
+        </div>
+    </div>
+    <script></script>
+</body>
+</html>
