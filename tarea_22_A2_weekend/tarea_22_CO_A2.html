@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive_tarea_audio.css">
     <title>weekend_A2</title>
     <style>
         * {
@@ -83,11 +84,11 @@
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
             <audio controls>
-                <source src="wekend2.mp3" type="audio/mp3">
+                <source src="wekend_Sans_Julie.mp3" type="audio/mp3">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
             <audio controls>
-                <source src="wekend2.mp3" type="audio/mp3">
+                <source src="wekend_Sans_Céline.mp3" type="audio/mp3">
                 Votre navigateur ne supporte pas l'élément audio.
             </audio>
         </div>
@@ -123,6 +124,18 @@
             </div>
         </div>
     </div>
-    <script></script>
+    
+    <script>
+        document.addEventListener('play', function(e) {
+            var audios = document.getElementsByTagName('audio');
+            for (var i = 0, len = audios.length; i < len; i++) {
+                if (audios[i] != e.target) {
+                    audios[i].pause();
+                }
+            }
+        }, true);
+    </script>
+    
+
 </body>
 </html>
